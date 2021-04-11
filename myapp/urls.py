@@ -18,9 +18,9 @@ urlpatterns = [
     path("delete/<int:item_id>/", deleteTodo, name="addTodo"),
     path("edit/<int:item_id>/", editTodo, name="editTodo"),
 
-    #added dis step for deploying in heroku
-    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
+    #added dis step for deploying in heroku----------------------------------------------------------------------------------------------------
+    #url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    #url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 
 ]
 
