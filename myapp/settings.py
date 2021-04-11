@@ -23,8 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'cmlz*!xkk=87bnvwh3^+@f@&%v5im$_%qz3_j@rtdxioj7^%kl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False #changed from true to false
-#changing '*' to '127.0.0.1','sampledomain.com heroku domain name n remove all \'
+DEBUG = False #changed from true to false-------------------------------------------------------------------------------------------------
+#changing '*' to '127.0.0.1','todo12app.herokuapp.com' heroku domain name n remove all \'-------------------------------------------------
 ALLOWED_HOSTS = ['127.0.0.1','todo12app.herokuapp.com']
 
 
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', #added dis extra
+    'whitenoise.middleware.WhiteNoiseMiddleware', #added dis extra---------------------------------------------------------------------------
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -120,6 +120,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+
+#added static_root------------------------------------------------------------------------------------------------------------------------------
+STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
 
